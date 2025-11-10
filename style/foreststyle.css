@@ -1,0 +1,123 @@
+header {
+  background-color: #2e4600;
+  font-family: "Lucida Handwriting", cursive;      
+  position: relative;
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 125px;
+}
+
+header h1 {
+  color: #dcedcl;
+  text-align: left;
+  max-width: 30%;
+  height: auto;
+}
+
+.navbox {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  z-index: 2;
+}
+
+nav a {
+  background-color: #4f772d!important;
+  font-family: Georgia, serif;
+  margin: 50px;
+  border: 2px solid #1b313;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #f0f7e8;
+}
+
+nav a:hover {
+  cursor:pointer;
+  font-size: 20px;
+  background-color: #a3c586;
+}
+
+body {
+  text-align: center;
+  font-family: Georgia, sans-serif;
+  background-color: #f5fff0
+}
+
+.imgbox {
+  background-image: url("../img/interactive.png");
+  background-color: #e6f2d9;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.itemlist {
+  position: absolute;
+  width:100px;
+  height: 100px;
+}
+
+.itemlist img {
+  width:200px;
+  height: 200px;
+  object-fit: contain;
+  max-width: 90%;
+  padding: 20px;
+} 
+  
+footer {
+  background-color: #3e4e2c;
+  color:white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+   font-size: 1.5rem;
+   max-width: 100%;
+  }
+
+  .mainp {
+   font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+   font-size: 1.2rem;
+  }
+  .navbox {
+   position: static;
+   flex-direction: column;
+   margin-top: 10px;
+  }
+  .itemlist {
+   font-size: 16px;
+   padding: 15px;
+  }
+  nav a {
+   margin: 5px;
+   padding: 8px 16px;
+   font-size: 14px;
+ }
+}

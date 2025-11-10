@@ -1,0 +1,126 @@
+header {
+  background-color: #2e4a2e;
+  font-family: "Lucida Handwriting", cursive;      
+  position: relative;
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 200px;
+  height: 125px;
+}
+
+header h1 {
+  color: #ffffcc;
+  text-align: left;
+  max-width: 30%;
+  height: auto;
+}
+
+.navbox {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 1rem;
+  z-index: 2;
+}
+
+nav a {
+  background-color: #6B4226!important;
+  font-family: Georgia, serif;
+  margin: 50px;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #F5F5DC;
+  display: inline-block;
+}
+
+nav a:hover {
+  cursor:pointer;
+  font-size: 20px;
+}
+
+body {
+  text-align: center;
+  font-family: Georgia, sans-serif;
+}
+
+.imgbox {
+  background-image: url("../img/mainp.jpg");
+  background-color: #ffffcc;
+  min-height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+}
+  
+.mainp {
+  background: rgba( 107, 66, 38, 0.75);
+  border-radius: 25px;
+  border-style: double;
+  text-align: center;
+  font-size: 22px;
+  font-family: Georgia, serif;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f5f5dc;
+  max-width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #2e4a2e;
+  color:white;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+   font-size: 1.5rem;
+   max-width: 100%;
+  }
+
+  .mainp {
+   font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+   font-size: 1.2rem;
+  }
+  .navbox {
+   position: static;
+   flex-direction: column;
+   margin-top: 10px;
+  }
+  .mainp {
+   font-size: 16px;
+   padding: 15px;
+  }
+  nav a {
+   margin: 5px;
+   padding: 8px 16px;
+   font-size: 14px;
+ }
+}
